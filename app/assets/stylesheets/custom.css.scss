@@ -8,16 +8,16 @@
 }
 
 .nav-link {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
   font-size: 1.5em;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   
 }
 
 
 #logo {
-   color: white !important;
-   font-size: 3em;
+   color: rgb(0, 0, 0) !important;
+   font-size: 2em;
    letter-spacing: 1px;
    font-weight: bold;
   
@@ -28,18 +28,19 @@
 .jumbotron {
 
 background-image: asset-url("homepage");
-background-position: center center;
+background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 height: 600px;
 
 }
 
-
 html,
 body {
   height: 100%;
+
 }
+
 
 #page-container {
   
