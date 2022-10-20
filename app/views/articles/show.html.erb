@@ -1,13 +1,15 @@
-<h1> You know it</h1>
+  <h2 class= "text-center mb-3"><%= @article.title %></h2>
+  <div class="container">
+      <div class="card border-dark shadow mb-3 col-6">
+          <div class="card-body">
+            <div class="card-text text-left"><%= simple_format(@article.description) %></div>
+          </div>
+          <%= link_to "Edit", edit_article_path(@article), class: "btn btn-outline-warning btn-sm " %>
+          <%= link_to "Delete", article_path(@article), class: "btn btn-outline-danger btn-sm", method: :delete, data: {confirm: "Are you sure?"} %>
+          <div class="card-footer text-muted">
+           <small>Created <%= time_ago_in_words(@article.created_at) %> ago, edited <%= time_ago_in_words(@article.updated_at)%> ago</small> 
+          </div>
+      </div>
+  </div>
 
-Title: <%= @article.title %></br>
-Description: <%= @article.description %>
 
-<p>
-<%= link_to 'Edit', edit_article_path(@article) %> <p>
-
-<p>
-<%= link_to 'Delete', article_path(@article), method: :delete, data: { confirm: "Are you sure?"} %> <p>
-
-<p>
-<%= link_to 'Return to listing', articles_path(@article) %> <p>
