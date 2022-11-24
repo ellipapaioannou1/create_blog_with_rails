@@ -3,12 +3,12 @@
 
 
 .navbar {
-  background-color: #455a64 !important;
+  background-color: #1B212B !important;
 
 }
 
 .nav-link {
-  color: rgb(0, 0, 0) !important;
+  color: #f4f3f2 !important;
   font-size: 1.5em;
   letter-spacing: 2px;
   
@@ -16,28 +16,21 @@
 
 
 #logo {
-   color: rgb(0, 0, 0) !important;
+   color: #fbf8f4 !important;
    font-size: 2em;
    letter-spacing: 1px;
    font-weight: bold;
   
 }
 
-
-
 .jumbotron {
 
-background-image: asset-url("homepage");
+background-image: asset-url("homepage2");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 600px;
+height: 100vh;
 
-}
-
-
-html, body {
-  height: 0%;
 }
 
 #page-container {
@@ -49,7 +42,7 @@ html, body {
 
 #page-content {
   flex: 1 0 auto;
-  background-color: lightgrey;
+  background-color: #CC9E4A;
 }
 
 .card-body {
